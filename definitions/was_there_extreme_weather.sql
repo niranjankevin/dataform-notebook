@@ -2,7 +2,7 @@ SELECT
     DATE_TRUNC(DATE(year, month, day), MONTH) AS date,
     COUNT(*) AS extreme_weather_count
 FROM
-    `bigquery-public-data.samples.gsod`
+    `preston-307021.dataform_extreme_weather_programming_example.gsod`
 WHERE
     (
         snow = TRUE

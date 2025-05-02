@@ -2,7 +2,7 @@ SELECT
     DATE_TRUNC(DATE(repository_created_at), MONTH) AS date,
     COUNT(*) AS repository_count
 FROM
-    `bigquery-public-data.samples.github_timeline`
+    `preston-307021.dataform_extreme_weather_programming_example.github_timeline`
 WHERE
     REGEXP_CONTAINS(
         repository_description,
